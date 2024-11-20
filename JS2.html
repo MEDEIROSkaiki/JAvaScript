@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+//Número positivo ou negativo
+//et numero = prompt("Digite um numero");
+//
+//f (numero > 0) {
+//   alert("O número é positivo");
+// else {
+//   alert("O número é negativo ou zero");
+
+//Idade
+//let idade = prompt("Digite sua idade:");
+//
+//if (idade >= 18) {
+//    alert("Voce é maior de idade");
+//} else {
+//    alert("Voce é menor de idade!");
+//}
+
+//Par ou ipar
+//let numero = prompt("Digite um número:");
+//
+//if (numero % 2 === 0) {
+//    alert("O número é par!");
+//} else {
+//    alert("O número é ímpar!");
+//}
+
+//Adivinhe o numero
+//let numerosecreto = 5;
+//let chute = prompt("Adivinhe o número (ebtre 1 e 10):");
+//
+//if (chute == numerosecreto) {
+//    alert("Voce acertou!");
+//} else {
+//    alert("Voce errou o número era " + numerosecreto);
+//}
+
+//Avaliação de notas
+//let nota = Number(prompt("Digite sua nota (0 a 10):"));
+//
+//if (nota >= 9) {
+//    alert("Excelente! Você tirou uma nota A.");
+//} else if (nota >= 7) {
+//    alert("Bom trabalho! Você tirou uma nota B.");
+//} else if (nota >= 5) {
+//    alert("Você tirou uma nota C. Pode melhorar.");
+//} else {
+//    alert("Nota insuficiente. Você tirou uma nota D.");
+//}
+
+//Exercicio1
+//let num1 = prompt("Insira um numero:");
+//let num2 = prompt("Insira um numero:");
+//let num3 = prompt("Insira um numero:");
+//
+//if (num1 > 0 && num2 > 0 && num3 > 0) {
+//   alert("Todos são positivos.");
+//} else {
+//    alert("Nem todos são positivos.");
+//}
+
+//exercicio2
+//let num1 = prompt("Insira um numero:");
+//let num2 = prompt("Insira outro numero");
+//let operacao = prompt("Qual operação (+, -, *, /):");
+//
+//if (operacao === "+") {
+//    console.log("Resultado: " + (num1 + num2));
+//} else if (operacao === "-") {
+//    console.log("Resultado: " + (num1 - num2));
+//} else if (operacao === "*") {
+//    console.log("Resultado: " + (num1 * num2));
+//} else if (operacao === "/") {
+//    if (num2 !== 0) {
+//        console.log("resultado:", num1 / num2);
+//    } else {
+//        console.log("Divisão por zero nao é permitida.");
+//    }
+//} else {
+//    console.log("operação invalida");
+//}
+
+//Exercicio3
+//let numero = Number(prompt("Digite um número:"));
+//
+//if (numero >= 50 && numero <= 100) {
+//    alert("Voce esta entre 50 e 100");
+//} else {
+//    alert("Voce não esta entre 50 e 100");
+//}
+
+//exeercicio4
+//let valorcompra = Number(prompt("Digite o valor"));
+//
+//if (valorcompra > 100) {
+//    let (valorcomdesconto + valorcompra * 0.9);
+//    console.log(`Valor com desconto: R$${valorcomdesconto.tofixed(2)}`);
+//} else {
+//    console.log(`Valor sem desconto: R$${valorcompra.toFixed(2)}`);
+//}
+
+//exercicio5
+//let altura = Number(prompt("Digite sua altura: "));
+//
+//if (altura < 150) {
+//    alert("Altura baixa");
+//} else if (altura <180) {
+//    alert("Altura media");
+//} else {
+//    alert("Altura alta");
+//}
+
+//exercicio6
+//let senhapre = 4321;
+//let senha = prompt("Digite sua senha:");
+//
+//if (senha == senhapre) {
+//    alert("Permitido");
+//} else {
+//    alert("Negado");
+//}
+
+//exercicio7
+//let num = Number(prompt("Digite um número:"));
+//if(num % 2 === 0) {
+//    alert("Numero é par");
+//}else {
+//    alert("Número é impar");
+//    if (num > 50) {
+//        alert("Número especial");
+//    }
+//}
+//if (num > 50) {
+//    alert("Número especial");
+//}
+
+//exercicio8
+//let idade = Number(prompt("Qual sua idade"));
+//
+//if (idade <= 12) {
+//    alert("Criança");
+//} else if (idade <= 17) {
+//    alert("Adolecente");
+//}else if (idade <= 64) {
+//    alert("Adulto");
+//} else {
+//    alert("idoso");
+//}
+
+//exercicio9
+//let numpre = 8;
+//let num = prompt("Digite um numero entre 1 e 10");
+//
+//if (num === numpre) {
+//    ("Voce acertou!1");
+//}else {
+//    alert("Voce errou");
+//}
+
+//exercicio10
+//let nota = Number(prompt("Digite sua nota (0 a 10):"));
+//
+//if (nota >= 0 && nota <= 4) {
+//    console.log("Ruim");
+//} else if (nota <= 7) {
+//    console.log("Bom");
+//} else if (nota <= 10) {
+//    console.log("Excelente");
+//} else {
+//    console.log("Nota inválida.");
+//}
+
+//exercicio final
+let nome = prompt("Informe seu nome");
+let idade = Number(prompt("Informe sua idade"));
+let prova = Number(prompt("Imforme sua nota"));
+let entrevista = Number(prompt("Informe sua pontuação na etrevista"));
+let resposta = "";
+
+if(prova < 0 || prova > 10 || entrevista <0 || entrevista >10) {
+    alert("Nota da prova ou entrevista invalida");
+    return;
+}
+ 
+else if(idade < 18){
+resposta += "voce não atende aos criterios de idade";
+}
+else if(prova < 7){
+resposta += "Sua pontuação na provafoi insuficiente";
+}
+else if(entrevista<6){
+resposta += "Sua pontuação na entrevista foi insuficiente";
+}
+if(resposta==""){
+    alert(Parabens, &{`nome`}! Voce foi aprovado);
+}
+let retorno = Desculpe, ${`nome`} ${`resposta`};
+alert(retorno);
+</script>
+
+</body>
+</html>
