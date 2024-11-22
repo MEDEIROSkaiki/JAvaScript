@@ -21,3 +21,9 @@ if(horario == "manha"){
     console.log("Opção invalida");
 }
 
+let nomealuno = prompt("Digite seu nome: ");
+let nota1 = prompt("Digite sua nota: ");
+let nota2 = prompt("Digite sua nota: ");
+let nota3 = prompt("Digite sua nota: ");
+let faltas = prompt("Digite quantidaes de faltas: ");
+
