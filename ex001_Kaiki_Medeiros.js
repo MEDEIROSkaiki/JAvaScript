@@ -15,8 +15,16 @@ if (funcao === 'ex001') {
     ex005(); 
 } else if (funcao === 'ex006') {
     ex006();
-}else if (funcao === 'ex007') {
-    ex007();     
+} else if (funcao === 'ex007') {
+    ex007(); 
+} else if (funcao === 'ex008') {
+    ex008();
+} else if (funcao === 'ex009') {
+    ex009();
+} else if (funcao === 'ex010') {
+    ex010();
+} else if (funcao === 'ex011') {
+    ex011();           
 } else {
   console.log('Função não encontrada!');
 }
@@ -89,4 +97,61 @@ let valorpar = valorto / numpar;
 console.log("Valor total: R$ " + valorto);
 console.log("Número de parcelas: " + numpar);
 console.log("Valor de cada parcela: R$ " + valorpar);
+}
+
+//Exercicio 8
+function ex008(){
+let horastra = parseInt(prompt("Digite o numero de horas trabalahadas por semana: "));
+let valorh = parseFloat(prompt("Digite valor da hora trabalhada: "));
+let salariosema = horastra * valorh;
+let salariomen = salariosema *4;
+
+console.log("Salario semanal: R$ " + salariosema.toFixed(2));
+console.log("Salario mensal: R$ " + salariomen.toFixed(2));
+}
+
+//Exercicio 9 
+function ex009(){
+let valorCompra = parseFloat(prompt("Digite o valor total da compra:"));
+let numParcelas = parseInt(prompt("Digite o número de parcelas:"));
+let taxaJuros = parseFloat(prompt("Digite a taxa de juros mensal (%):")) / 100;
+let valorTotalComJuros = valorCompra * Math.pow((1 + taxaJuros), numParcelas);
+let valorParcela = valorTotalComJuros / numParcelas;
+
+console.log("Valor total da compra: R$ " + valorCompra.toFixed(2));
+console.log("Número de parcelas: " + numParcelas);
+console.log("Taxa de juros mensal: " + (taxaJuros * 100).toFixed(2) + "%");
+console.log("Valor de cada parcela: R$ " + valorParcela.toFixed(2));
+}
+
+//Exercicio 10
+function ex010(){
+let num = parseInt(prompt("Digite um numero: "));
+
+if (num % 2 == 0){
+    console.log("O numero " + num + "é par.");
+}else {
+  console.log("O numero " + num + "é impar");
+}
+}
+
+//Desafio media + faltas
+function ex011(){
+let nome = prompt("Digite seu nome: ");
+let num1 = Number(prompt("Digite a nota 1: "));
+let num2 = Number(prompt("Digite a nota 2: "));
+let num3 = Number(prompt("Digite a nota 3: "));
+let faltas = parseFloat(prompt("Digite a porcentagem de faltas: "));
+let media = (num1 + num2 + num3) / 3;
+let resultado;
+
+if (media>= 7 && faltas < 25) {
+    resultado = "Aprovado";
+} else if (media >= 5 && media < 7 && faltas <25) {
+    resultado = "Recuperação";
+} else {
+  resultado = "Reprovado";
+}
+
+console.log(`${nome} - Média: ${media.toFixed(2)} - Faltas: ${faltas}% - Resultado: ${resultado}`);
 }
