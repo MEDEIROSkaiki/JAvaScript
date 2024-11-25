@@ -145,7 +145,7 @@ case 3 :
     let equipes = parseInt(prompt("Digite o numero de equipes: "));
     custo = dias * equipes * 500;
 default:
-    console.log("Opção invalida");
+    console.log("Opção invalida!");
 break;
 }
 
