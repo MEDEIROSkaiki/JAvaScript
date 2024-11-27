@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando entre modo claro e escuro</title>
+</head>
+<body>
+    <!--chamando uma funçao no botao, definindo no script -->
+    <button onclick="alterna()">Alternar Tema</button><br>
+
+   <p>Eu sou um texto nesta pagina que alterna entre a cor branca e a cor preta</p>
+
+<style>
+    body.light {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+</style>
+
+<script>
+  
+function alterna() {
+    document.body.classList.toggle(`dark`);
+    document.body.classList.toggle(`light`);
+}
+
+</script>
+
+</body>
+</html>
