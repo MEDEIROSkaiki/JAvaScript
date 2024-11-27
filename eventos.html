@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+    .oculto {
+        display: none;
+    }
+    .visivel {
+        display: block;
+    }
+</style>
+
+<button id="botao">Ocultar/Mostrar</button>
+<div id="caixa" class="oculto">Este texto será ocultado.</div>
+
+<script>
+
+// Seleciona os elementos
+const caixa = document.getElementById("caixa");
+const botao = document.getElementById("botao");
+
+// Adiciona um evento de clique no botão
+botao.addEventListener("mouseover", () => {
+      caixa.classList.replace("oculto", "visivel");
+});
+   
+botao.addEventListener("mouseout", () => {
+      caixa.classList.replace("visivel", "oculto");
+});
+
+</script>
+
+</body>
+</html>
